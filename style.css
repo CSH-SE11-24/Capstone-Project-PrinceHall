@@ -1,0 +1,437 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* This didn't write the next lines of code its from a user called evarevirus from bootsnipp */
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+
+.new {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:#000000; padding:0; margin:0;padding-top: 50px; padding-bottom: 50px; overflow: hidden;  text-align:center;  
+}
+
+.align {
+  text-align:center
+}
+
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:#000000; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(imgs/IMG_1365.JPG); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(imgs/IMG_1365.JPG); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(imgs/IMG_1365.JPG); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+:root {
+  /* colors */
+  --tf8-color-primary-hsl: 250, 84%, 54%;
+  --tf8-color-bg-hsl: 0, 0%, 100%;
+  --tf8-color-contrast-high-hsl: 230, 7%, 23%;
+  --tf8-color-contrast-higher-hsl: 230, 13%, 9%;
+  --tf8-color-contrast-medium-hsl: 225, 4%, 47%;
+  --tf8-color-contrast-lower-hsl: 240, 4%, 85%;
+
+  /* spacing */
+  --tf8-space-4xs: 0.125rem;
+  --tf8-space-md: 1.25rem;
+  --tf8-space-lg: 2rem;
+  --tf8-space-2xl: 5.25rem;
+
+  /* typography */
+  --tf8-text-lg: 1.25rem;
+  
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --tf8-space-4xs: 0.1875rem;
+    --tf8-space-md: 2rem;
+    --tf8-space-lg: 3.125rem;
+    --tf8-space-2xl: 8.25rem;
+
+    /* typography */
+    --tf8-text-lg: 1.75rem;
+  }
+}
+
+/* icons */
+.tf8-icon {
+  height: var(--tf8-size, 1em);
+  width: var(--tf8-size, 1em);
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+.tf8-icon--2xl {
+  --tf8-size: 96px;
+}
+
+/* component */
+.testimonial__block-wrapper {
+  position: relative;
+}
+.testimonial__block-wrapper blockquote {
+  position: relative;
+  z-index: 1;
+}
+.testimonial__block-wrapper .tf8-icon {
+  position: absolute;
+  top: -0.5em;
+  left: -0.5em;
+}
+
+/* utility classes */
+.tf8-margin-top-4xs {
+  margin-top: var(--tf8-space-4xs);
+}
+
+.tf8-color-contrast-medium {
+  --tf8-color-o: 1;
+  color: hsla(var(--tf8-color-contrast-medium-hsl), var(--tf8-color-o, 1));
+}
+
+.tf8-letter-spacing-md {
+  letter-spacing: 0.05em;
+}
+
+.tf8-text-uppercase {
+  text-transform: uppercase;
+}
+
+.tf8-text-center {
+  text-align: center;
+}
+
+.tf8-opacity-10\% {
+  opacity: 0.1;
+}
+
+.tf8-color-contrast-higher {
+  --tf8-color-o: 1;
+  color: hsla(var(--tf8-color-contrast-higher-hsl), var(--tf8-color-o, 1));
+}
+
+.tf8-line-height-md {
+  line-height: 1.4;
+}
+
+.tf8-text-lg {
+  font-size: var(--tf8-text-lg);
+}
+
+.tf8-margin-bottom-lg {
+  margin-bottom: var(--tf8-space-lg);
+}
+
+.tf8-shadow-sm {
+  box-shadow:0 0.3px 0.4px rgba(0, 0, 0, 0.025),0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tf8-border {
+  --tf8-border-o: 1;
+  border: var(--tf8-border-width, 1px) var(--tf8-border-style, solid) hsla(var(--tf8-color-contrast-lower-hsl), var(--tf8-border-o, 1));
+}
+
+.tf8-radius-50\% {
+  border-radius: 50%;
+}
+
+.tf8-height-2xl {
+  height: 6rem;
+}
+
+.tf8-width-2xl {
+  width: 6rem;
+}
+
+.tf8-block {
+  display: block;
+}
+
+.tf8-margin-bottom-md {
+  margin-bottom: var(--tf8-space-md);
+}
+
+.tf8-justify-center {
+  justify-content: center;
+}
+
+.tf8-flex {
+  display: flex;
+}
+
+.tf8-max-width-adaptive-sm {
+  max-width: 32rem;
+}
+
+@media(min-width: 48rem) {
+  .tf8-max-width-adaptive-sm {
+    max-width: 48rem;
+  }
+}
+
+.tf8-container {
+  width: calc(100% - 2*var(--tf8-space-md));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tf8-padding-y-2xl {
+  padding-top: var(--tf8-space-2xl);
+  padding-bottom: var(--tf8-space-2xl);
+}
+
+.tf8-z-index-1 {
+  z-index: 1;
+}
+
+.tf8-position-relative {
+  position: relative;
+}
+
+.tf8-border-bg {
+  --tf8-border-o: 1;
+  border-color: hsla(var(--tf8-color-bg-hsl), var(--tf8-border-o, 1));
+}
+
+.tf8-border-2 {
+  --tf8-border-width: 2px;
+}
+
+/* The next portion is made by a user called  it't the basis of the fun fact section*/
+
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /* 
+      Change favorite color
+      Default: hsl(255, 90%, 60%)
+      Orange: hsl(14, 90%, 60%) - Blue: hsl(210, 90%, 50%)
+      Pink: hsl(356, 100%, 65%) - Green: hsl(162, 90%, 40%)
+
+      For more colors visit: https://colors.dopely.top/color-pedia
+      -> Choose any color 
+      -> Click on tab (Color Conversion)
+      -> Copy the color mode (HSL)
+  */
+  --hue: 255;
+  --first-color: hsl(var(--hue), 90%, 60%);
+  --first-color-alt: hsl(var(--hue), 82%, 56%);
+  --first-color-light: hsl(var(--hue), 40%, 80%);
+  --title-color: hsl(var(--hue), 24%, 16%);
+  --text-color: hsl(var(--hue), 8%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 60%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(0, 0%, 100%);
+  --shadow-color: hsla(var(--hue), 90%, 30%, 0.1);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*=============== TESTIMONIAL ===============*/
+.testimonial__container {
+  position: relative;
+}
+
+.testimonial__swiper {
+  padding-bottom: 2rem;
+}
+
+.testimonial__card {
+  background-color: hsl(0, 0%, 100%);;
+  padding: 2rem 1.25rem 2.5rem 1.25rem;
+  border-inline: 8px solid var(--first-color);
+  box-shadow: 0 12px 24px var(--shadow-color);
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: background-color 0.4s;
+}
+
+.testimonial__border {
+  width: 100px;
+  height: 100px;
+  border: 6px solid var(--first-color);
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.testimonial__img {
+  filter: grayscale(1);
+  transition: filter 0.4s;
+}
+
+.testimonial__name {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.testimonial__card:hover .testimonial__img {
+  filter: none;
+}
+.cd-padding-y-xl {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.cd-margin-bottom-xl {
+  margin-bottom: 4.5rem;
+}
+
+.cd-margin-bottom-2xs {
+  margin-bottom: 0.75rem;
+}
+
+.cd-text-center {
+  text-align: center;
+}
+
+.large {
+  font-size: 60px!important;
+}
+
+.bodytext {
+  color:#7256b3;
+}
+
+/* This is to make sure the Baby picture of me is sized correctly in the navabr */
+
+.navbar-brand {
+  height:50px;
+  width:50px
+}
+
+.blanktext {
+  font-family: "Roboto Mono", monospace!important;
+}
+
+#question {
+  padding-top: 30px;
+  font-family: "Roboto Mono", monospace!important;
+}
